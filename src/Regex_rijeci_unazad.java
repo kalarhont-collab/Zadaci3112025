@@ -3,7 +3,7 @@
 //Primjer ulaza: Dobar dan svima
 //Primjer izlaza: svima dan Dobar
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 public class Regex_rijeci_unazad {
 
