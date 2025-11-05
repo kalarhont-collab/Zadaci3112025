@@ -3,6 +3,7 @@
 //Primjer ulaza: Dobar dan svima
 //Primjer izlaza: svima dan Dobar
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class Regex_rijeci_unazad {
 
@@ -10,15 +11,19 @@ public class Regex_rijeci_unazad {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Unesite tekst");
+        System.out.println("Unesite neki tekst");
 
-        String unos = sc.nextLine();
+        String unos = sc.nextLine().trim();
 
-     String[] characters = unos.split("[\\s]");
+       String[] characters = unos.split("\\s+");
 
-           for (int i = characters.length - 1; i >= 0; i--) {
-               System.out.printf(characters[i] + " ");
+             for (int i = characters.length - 1; i >= 0; i--) {
+             System.out.print(characters[i] + " ");
+
+            }
+
+         }
 
 }
-}
-}
+
+
